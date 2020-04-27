@@ -6,12 +6,13 @@ For further consultion or a request of this code and future code, please contact
 ## Installation
 package list in Python(Py3.x version):
 ```
-pip install torch==1.4.0+cu100 random argparse opencv-python numpy matplotlib
+pip install torch==1.4.0+cu100 random argparse opencv-python numpy
 ```
 This code is based on the release of detectron2 from FAIR. That means detectron2 is supposed to be installed as well. For the detail of setup, please refer to the project of detectron2.
 By the way, for the stability of the code, keep the version of  pytorch fixed and same with the version introduced here. Other versions are not guaranteed to work properly.
 
 ## File organization
+As for `run.py`
 ```
 root
 |——adaptation
@@ -33,16 +34,29 @@ root
      |——mog-aug
      |——fog-aug
 ```
-
+As for `atomizer.py`
+```
+root
+|——input
+|——output
+     |——result
+```
 ## Usage
-Basic usage for adaptive segmentation is as follows:
+Basic usage for `run.py` is as follows:
 ```
 cd path to run.py
 python run.py --input_A path_to_dataset_after_adaptation --input_T path_to_target_dataset --output path_to_save
 ```
+Basic usage for `atomizer.py` is as follows:
+```
+cd path to atomizer.py
+python main.py --input ./input --output ./output --transpancy
+```
+Above example shows the production of fog defaulty and if you hope a mog, please set the coefficient `--transpancy` in the range of `[0.1,0.4]` while `[0.6,0.9]` works for fog.
 ## API
 More options are available in --help
 ```
 python run.py --help
+python atomizer.py --help
 
 ```
