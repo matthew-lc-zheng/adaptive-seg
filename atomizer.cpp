@@ -47,7 +47,6 @@ void atomizer(string &input,
     Mat frame, image;
     int num = imgs.size();
     pair<double, double> C{out_size[0] * center[0], out_size[1] * center[1]};
-    int id = 0;
     double xi;
     for (int i = 0; i < num; ++i) {
         image = imread(imgs[i]);
@@ -60,12 +59,11 @@ void atomizer(string &input,
                 frame.at<Vec3b>(j, k)[2] = frame.at<Vec3b>(j, k)[2] * xi + transpancy * (1 - xi) * 255;
             }
         }
-        ++id;
         if (access(output.c_str(), F_OK) == -1) {
             string command = "mkdir -p " + output;
             system(command.c_str());
         }
-        rename(frame, output, id);
+        rename(frame, output, i+1);
     }
 }
 
