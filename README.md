@@ -1,7 +1,7 @@
 # In-situ adaptation for the task of instance segmentation
 The code in *adaptive-seg* links the dissertation of ***Domain adaptation for instance segmentation***, 2020.
 The part of transfer masks and boxes is shown and published here. The codes of extra algorithms in the thesis is forthcoming and will be opened in future.
-For further consultion or a request of this code and future code, please contact with *matthew.lc.zheng@outlook.com* or *matthew.lc.zheng@protonmail.com* officially. All informal conversations are suggested being done by *zsms123zlc@gmail.com* or *libraneptune@163.com*
+For further consultation or a request of this code and future code, please contact with *matthew.lc.zheng@outlook.com* or *matthew.lc.zheng@protonmail.com* officially. All informal conversations are suggested being done by *zsms123zlc@gmail.com* or *libraneptune@163.com*
 
 ## Installation and requirements
 package list in Python(Py3.x version):
