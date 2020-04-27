@@ -53,7 +53,7 @@ cd path to atomizer.py
 python main.py --input ./input --output ./output --transpancy
 ```
 Above example shows the production of fog defaulty and if you hope a mog, please set the coefficient `--transpancy` in the range of `[0.1,0.4]` while `[0.6,0.9]` works for fog.
-## API
+## Options
 More options are available in --help
 ```
 python run.py --help
