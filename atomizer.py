@@ -58,6 +58,14 @@ def info(t_start, t_stop, num_img):
         print('Total %d images have beed processed.' % num_img)
 
 
+def author():
+    print('Author@Matthew LC Zheng\n'
+          'Organization@UESTC\n'
+          'Project@Bachelor dissertation: Domain adaptation for isntance segmentation\n'
+          'Repository@https://github.com/matthew-lc-zheng/adaptive-seg\n'
+          'License@Apache-2.0')
+    
+    
 '''
 main part of atomizer
 '''
@@ -89,3 +97,4 @@ if __name__ == '__main__':
     num_img = atomizer()
     t_stop = timer()
     info(t_start, t_stop, num_img)
+    author()
