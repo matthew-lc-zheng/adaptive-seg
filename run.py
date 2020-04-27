@@ -72,7 +72,7 @@ COCO_INSTANCE_CATEGORY_NAMES = [
 ]
 
 '''
-help functions:
+auxiliary functions:
 @random_colour_masks->get the coloured masks by the size of the input iamge
 '''
 
@@ -85,6 +85,14 @@ def random_colour_masks(image):
     coloured_mask = np.stack([r, g, b], axis=2)
     return coloured_mask
 
+  
+def author():
+    print('Author@Matthew LC Zheng\n'
+        'Organization@UESTC\n'
+        'Project@Bachelor dissertation: Domain adaptation for isntance segmentation\n'
+        'Repository@https://github.com/matthew-lc-zheng/adaptive-seg\n'
+        'License@Apache-2.0')
+    
 
 '''
 @img_r: iamges in target domain
@@ -152,6 +160,7 @@ def instance_segmentation_api(path_in, path_out, rect_th=1, text_size=3, text_th
 
 
 if __name__ == '__main__':
+    author()
     for T in output_dir:
         if mode == 1:
             path_in = '%s/%s' % (option.input_T, T)
@@ -162,3 +171,4 @@ if __name__ == '__main__':
             path_in_ad = '%s/%s' % (option.input_A, T)
             path_out = '%s/%s' % (option.output, T)
             instance_segmentation_ad_api(path_in_ad, path_in_r, path_out, rect_th, text_size, text_th, show_info)
+    
