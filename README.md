@@ -50,9 +50,11 @@ python run.py --input_A path_to_dataset_after_adaptation --input_T path_to_targe
 Basic usage for `atomizer.py` is as follows:
 ```
 cd path to atomizer.py
-python main.py --input ./input --output ./output --transpancy
+python main.py --input ./input --output ./output 
 ```
 Above example shows the production of fog defaulty and if you hope a mog, please set the coefficient `--transpancy` in the range of `[0.1,0.4]` while `[0.6,0.9]` works for fog.
+More options of the usage can be find in the next section.
+
 ## Options
 More options are available in --help
 ```
