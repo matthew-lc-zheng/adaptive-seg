@@ -55,6 +55,8 @@ python main.py --input ./input --output ./output
 Above example shows the production of fog defaulty and if you hope a mog, please set the coefficient `--transpancy` in the range of `[0.1,0.4]` while `[0.6,0.9]` works for fog.
 More options of the usage can be find in the next section.
 
+**Extra**: For the operation of atomization, the code in cpp runs at least 100x faster than in python. You are permitted to set corresponding parameters in the cpp file to run it with less time consumpation.
+
 ## Options
 More options are available in --help
 ```
