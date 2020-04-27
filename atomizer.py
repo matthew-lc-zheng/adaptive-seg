@@ -93,8 +93,8 @@ def atomizer():
 
 
 if __name__ == '__main__':
+    author()
     t_start = timer()
     num_img = atomizer()
     t_stop = timer()
     info(t_start, t_stop, num_img)
-    author()
