@@ -11,6 +11,7 @@ pip install torch==1.4.0+cu100 random argparse opencv-python numpy
 This code is based on the release of detectron2 from FAIR. That means detectron2 is supposed to be installed as well. For the detail of setup, please refer to the project of detectron2.
 By the way, for the stability of the code, keep the version of  pytorch fixed and same with the version introduced here. Other versions are not guaranteed to work properly.
 
+If you hope to try the cpp file, please build the source code of opencv in cpp and then install it.
 ## File organization
 As for `run.py`
 ```
